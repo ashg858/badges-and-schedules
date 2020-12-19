@@ -3,8 +3,8 @@ def badge_maker(name)
   end
 
 def batch_badge_creator(attendees)
-    attendeess.map do |person|
-      badge_maker(person)
+    attendees.map.with_index(1) do |person|
+      "Hello, my name is #{person}."
     end
 end
 
